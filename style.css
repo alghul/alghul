@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -12,42 +13,51 @@ header {
 	height: 175px;
 }
 
-.off-canvas-menu {
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.menu {
     position: fixed;
     top: 0;
     left: -250px;
     width: 250px;
     height: 100%;
     background-color: #333;
+    padding: 20px;
     color: #fff;
-    padding: 0px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    transition: left 0.3s ease-in-out;
+    transition: left 0.3s ease;
 }
 
-.off-canvas-menu ul {
+.menu ul {
     list-style: none;
     padding: 0;
 }
 
-.off-canvas-menu ul li {
+.menu ul li {
     margin-bottom: 10px;
 }
 
-.off-canvas-menu a {
+.menu a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
 }
 
-#menu-toggle,
-#menu-close {
+button#open-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
     cursor: pointer;
-    outline: none;
 }
 
 #content {

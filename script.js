@@ -1,14 +1,13 @@
-const menuToggle = document.getElementById('menu-toggle');
-const menuClose = document.getElementById('menu-close');
+const openMenuButton = document.getElementById('open-menu');
 const menu = document.getElementById('menu');
-const content = document.getElementById('content');
+const menuOverlay = document.getElementById('menu-overlay');
 
-menuToggle.addEventListener('click', () => {
+openMenuButton.addEventListener('click', () => {
     menu.style.left = '0';
-    content.style.marginLeft = '250px';
+    menuOverlay.style.display = 'block';
 });
 
-menuClose.addEventListener('click', () => {
+menuOverlay.addEventListener('click', () => {
     menu.style.left = '-250px';
-    content.style.marginLeft = '0';
+    menuOverlay.style.display = 'none';
 });
