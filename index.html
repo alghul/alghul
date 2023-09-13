@@ -6,21 +6,10 @@
     <link rel="stylesheet" href="style.css">
     <title>Alghul</title>
 	<link rel="icon" type="image/x-icon" href="favicon.ico" > 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    <header>
-        <button id="menu-toggle">Open Menu</button>
-		
-		<nav>
-            <ul>
-                <li><a href="https://cnn.com">Home</a></li>
-                <li><a href="https://cnn.com">About</a></li>
-                <li><a href="https://cnn.com">Services</a></li>
-                <li><a href="https://cnn.com">Contact</a></li>
-            </ul>
-        </nav>
-		
-    </header>
+    
     <div id="menu" class="off-canvas-menu">
         <ul>
             <li><a href="#">Home</a></li>
@@ -76,7 +65,17 @@
 	
 	
 	
-	
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("headernav.html");
+});
+</script>
+<!--end of Navigation bar-->
 	
 	
     <script src="script.js"></script>
