@@ -77,6 +77,14 @@ body {
     line-height: 1.2;
   }
 
+  .page-title2 {
+    margin-bottom: 1.5rem;
+    font-family: "Shrikhand", serif;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #e9590b;
+  }
+
   .page-description1 {
     position:relative;
     top: -110px; right: -850px;
