@@ -60,15 +60,26 @@ body {
   line-height: 1.2;
 }
 .page-description {
-    
+    position: relative;
+    top: -10px; right: 1px;
     font-family: "Shrikhand", serif;
     font-size: 20px;
     line-height: 0.6;
   }
 
+  .page-title1 {
+    position:relative;
+    top: -70px; right: -900px;
+    color:black;
+    margin-bottom: 1.5rem;
+    font-family: "Shrikhand", serif;
+    font-size: 50px;
+    line-height: 1.2;
+  }
+
   .page-description1 {
     position:relative;
-    top: -10px; right: 1px;
+    top: -110px; right: -850px;
     font-family: "Shrikhand", serif;
     font-size: 20px;
     line-height: 0.6;
